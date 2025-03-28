@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            width: 400px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        input {
+            width: calc(100% - 30px);
+            padding: 15px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="Neon Sunset Wallpaper.mp4" type="video/mp4">
+    </video>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form onsubmit="redirectToMainPage(event)">
+            <label for="gmail" style="font-size: 18px;">Gmail Account:</label><br>
+            <input type="email" id="gmail" name="gmail" placeholder="youremail@gmail.com" required><br>
+            
+            <label for="username" style="font-size: 18px;">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            
+            <label for="password" style="font-size: 18px;">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            
+            <input type="submit" value="Login">
+        </form>
+        <p style="font-size: 16px;">Don't have an account? <a href="registration form.html" style="color: #007bff; font-weight: bold;">Register here</a></p>
+    </div>
+
+    <script>
+        function redirectToMainPage(event) {
+            event.preventDefault();
+            window.location.href = "MAIN PAGE.html";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
